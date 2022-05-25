@@ -1,0 +1,57 @@
+{{ define "main" }}
+
+{{ $data := index site.Data site.Language.Lang }}
+
+<!-- about -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        {{ with .Params.image }}
+        <img class="img-fluid w-100 mb-4" src="{{ . | relURL }}" alt="about image">
+        {{ end }}
+        {{ .Content }}
+      </div>
+    </div>
+ 
+    <div style="min-height: 50px;"></div>
+    
+    <div class="row justify-content-center">
+      <div class="col-3">
+        <div class="card" style="border: none !important;">
+          <h3 style="min-height: 60px;">Experience</h3>
+          <image src="/images/projects/city-of-cape-town-electricity-head-office.jpg"></image>
+          <p>Our in-house experience includes exposure to management of chemical and industrial operations in the formal manufacturing sector. As such there is a good overlap between consulting and practical on-site application and operation. This allows us to design and implement customised, practical and feasible environmental management solutions for our clients using the latest technology and knowledge.</p>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card" style="border: none !important;">
+          <h3 style="min-height: 60px;">The Team</h3>
+          <image src="/images/projects/fair-valley.jpg"></image>
+          <p>We have a policy of continuous professional development for all our personnel and our team is continuously developing their professional expertise and knowledge. We also have a strong emphasis on in house training and mentorship to facilitate the growth of individuals and to maximise their potential within the company</p>
+          <a href="/team" style="text-align: right;" class="secondary-font"><b>Meet The Team</b></a>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card" style="border: none !important;">
+          <h3 style="min-height: 60px;">BBBEE & Social Upliftment</h3>
+          <image src="/images/projects/monitoring-solutions.jpg"></image>
+          <p>Sillito Environmental Consulting has a Level 4 Broad Based Black Economic Empowerment Rating and strives to uplift, promote and develop members of our team.</p>
+          <br/>
+          <p>The company has a variety of socially responsible projects that it supports, as well as several ‘not for profit’ organisations.</p>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card" style="border: none !important;">
+          <h3 style="min-height: 60px;">Latest Technology</h3>
+          <image src="/images/projects/waste-management.jpg"></image>
+          <p>Sillito Environmental Consulting strives to stay ahead of the game when it comes to changing legislation, environmental requirements, as well as the latest technology and industry best practices.</p>
+          <br/>
+          <p>We ensure our clients have access to the latest information.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

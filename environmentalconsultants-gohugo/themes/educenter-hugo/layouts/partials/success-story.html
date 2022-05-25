@@ -1,0 +1,26 @@
+{{ $data := index site.Data site.Language.Lang }}
+
+{{ with $data.homepage.success_story }}
+<section class="section bg-cover" data-background="{{ .bg_image | absURL }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-sm-8">
+        <div class="bg-white p-5">
+          <h2 class="section-title">{{ .lefttitle | markdownify }}</h2>
+          <p>{{ .leftcontent | markdownify }}</p>
+          <br/>
+          <a href="{{ .link | absLangURL }}" class="btn btn-dark">{{ .label }}</a>
+        </div>
+      </div>
+      <div class="col-lg-6 col-sm-8">
+        <div class="bg-white p-5">
+          <h2 class="section-title">{{ .righttitle | markdownify }}</h2>
+          <p>{{ .rightcontent | markdownify }}</p>
+          <br/>
+          <a href="{{ .link | absLangURL }}" class="btn btn-dark">{{ .label }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

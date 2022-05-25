@@ -1,0 +1,223 @@
+######################## default configuration ####################
+baseURL = "/"
+title = "Sillito Environmental Consulting"
+theme = "educenter-hugo"
+# post pagination
+paginate = "6"
+# post excerpt
+summaryLength = "10"
+# disqus short name
+disqusShortname = "educenter" # get your shortname form here : https://disqus.com
+# disable language
+disableLanguages = "fr" # desable language from here
+
+############################# Plugins ##############################
+
+# CSS Plugins
+[[params.plugins.css]]
+link = "plugins/bootstrap/bootstrap.min.css"
+[[params.plugins.css]]
+link = "plugins/slick/slick.css"
+[[params.plugins.css]]
+link = "plugins/animate/animate.css"
+[[params.plugins.css]]
+link = "plugins/venobox/venobox.css"
+[[params.plugins.css]]
+link = "plugins/themify-icons/themify-icons.css"
+
+# JS Plugins
+[[params.plugins.js]]
+link = "plugins/jQuery/jquery.min.js"
+[[params.plugins.js]]
+link = "plugins/jQuery/jquery.validate.min.js"
+[[params.plugins.js]]
+link = "plugins/bootstrap/bootstrap.min.js"
+[[params.plugins.js]]
+link = "plugins/slick/slick.min.js"
+[[params.plugins.js]]
+link = "plugins/venobox/venobox.min.js"
+[[params.plugins.js]]
+link = "plugins/filterizr/jquery.filterizr.min.js"
+[[params.plugins.js]]
+link = "plugins/google-map/gmap.js"
+
+
+#################### default parameters ################################
+[params]
+logo = "images/EC_logo.png"
+footerlogo = "images/foot-logo2.png"
+# Meta data
+description = "Sillito Environmental Consulting provides expertise in the areas of environmental authorisation, licencing, monitoring and auditing, contamination assessment, development of environmental management and waste solutions for both large scale mining, industrial, environmental and civil engineering projects, as well as smaller scale residential, commercial and industrial developments."
+author = "Steven Knoop"
+# contact info
+address = "Suite 105, Block B2, Tokai Village Centre, Vans Road, Tokai, Cape Town, South Africa"
+mobile = "+27 21 712 5060"
+email = "info@environmentalconsultants.co.za"
+# contact form action
+contact_form_action = "#" # contact form works with https://formspree.io
+# Google Analitycs
+google_analitycs_id = "" # your id
+# Google reCAPTCHA
+reCAPTCHA_site_key = "6Le7c_gfAAAAAI5qewQV6q1MfL5x4oMkJv9vqoQn"
+# top header
+top_header = true
+
+# Preloader
+[params.preloader]
+enable = false
+preloader = "images/preloader.gif" # use jpg, png, svg or gif format.
+
+# Subscription
+[params.subscription]
+enable = true
+# mailchimp subsciption
+mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074" # replace this url with yours
+mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074" # replace this code with yours
+
+# google map
+[params.map]
+enable = true
+gmap_api = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
+map_latitude = "-34.0650304"
+map_longitude = "18.45631"
+map_marker = "images/marker.png" # marker size 37*55 px
+
+# cookies
+[params.cookies]
+enable = true
+expire_days = 2
+  
+############################# social site ########################
+[[params.social]]
+title = "facebook"
+icon = "ti-facebook" # themify icon : https://themify.me/themify-icons
+link = "https://www.facebook.com/Sillito-Environmental-Consulting-204429539713912/"
+
+[[params.social]]
+title = "linkedin"
+icon = "ti-linkedin" # themify icon : https://themify.me/themify-icons
+link = "https://www.linkedin.com/company/sillito-environmental-consulting-pty-ltd/"
+
+
+################################### English language #####################################
+[Languages.en]
+languageName = "En"
+languageCode = "en-us"
+contentDir = "content/english"
+weight = 1
+home = "Home"
+# copyright
+copyright = "Copyright 2022 - Environmental Consultants - All Rights Reserved"
+
+
+
+################### English navigation ####################
+
+# main menu
+[[Languages.en.menu.main]]
+name = "Services"
+url = "services"
+weight = 1
+
+[[Languages.en.menu.main]]
+name = "Projects"
+url = "projects"
+weight = 2
+
+[[Languages.en.menu.main]]
+name = "Clients"
+url = "clients"
+weight = 3
+
+[[Languages.en.menu.main]]
+name = "Public Participation"
+url = "public-participation"
+weight = 4
+
+[[Languages.en.menu.main]]
+weight = 5
+name = "Info"
+hasChildren = true
+
+  [[Languages.en.menu.main]]
+  parent = "Info"
+  name = "About"
+  url = "about"
+
+  [[Languages.en.menu.main]]
+  parent = "Info"
+  name = "Team"
+  url = "team"
+
+  [[Languages.en.menu.main]]
+  parent = "Info"
+  name = "News"
+  url = "blog"
+
+[[Languages.en.menu.main]]
+name = "Contact"
+url = "contact"
+weight = 6
+
+
+# footer menu
+[[Languages.en.menu.footerservices]]
+name = "Green Star Accreditation"
+url = "services/green-buildings"
+weight = 1
+
+[[Languages.en.menu.footerservices]]
+name = "Environmental Impact Assessment"
+url = "services/environmental-authorisations"
+weight = 2
+
+[[Languages.en.menu.footerservices]]
+name = "Waste Management & Monitoring Services"
+url = "services/waste-management-monitoring-services"
+weight = 4
+
+[[Languages.en.menu.footerservices]]
+name = "Contamination & Remediation Services"
+url = "services/contamination-remediation-services"
+weight = 5
+
+[[Languages.en.menu.footerservices]]
+name = "Underground Utilities Detection"
+url = "services/underground-utilities-detection"
+weight = 6
+
+[[Languages.en.menu.footer]]
+name = "Projects"
+url = "projects"
+weight = 1
+
+[[Languages.en.menu.footer]]
+name = "Clients"
+url = "clients"
+weight = 2
+
+[[Languages.en.menu.footer]]
+name = "Public Participation"
+url = "public-participation"
+weight = 3
+
+# info footer menu
+[[Languages.en.menu.footerinfo]]
+name = "About"
+url = "about"
+weight = 1
+
+[[Languages.en.menu.footerinfo]]
+name = "Team"
+url = "team"
+weight = 2
+
+[[Languages.en.menu.footerinfo]]
+name = "News"
+url = "blog"
+weight = 3
+
+[[Languages.en.menu.footerinfo]]
+name = "Contact"
+url = "contact"
+weight = 4

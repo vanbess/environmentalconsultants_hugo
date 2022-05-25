@@ -1,0 +1,189 @@
+################################# Slider #####################################
+slider:
+  enable : true
+  bg_image : "images/banner/20-year-banner4.jpg"
+  slider_item:
+    # slider item loop
+    - title : #"Established in 2001"
+      content : #"with the aim of providing professional environmental management and environmental assessment services to all industries, particularly in the areas of Environmental Impact Assessment, Subsurface Assessment, Site Remediation, Waste Management and Air Quality Management." #"with the aim of providing professional environmental management and environmental assessment services to all industries, particularly in the areas of Environmental Impact Assessment, Subsurface Assessment, Site Remediation, Waste Management and Air Quality Management."
+      animation_in : "left"
+      animation_out : "right"
+      bg_image : "images/banner/20-year-banner4.jpg"
+      # available animation : left, right, up, down
+      button:
+        enable : false
+        label : "Apply now"
+        link : "contact"
+
+    # slider item loop
+    - title : "Sillito Environmental Consulting"
+      content : "We provide licensing in terms of all South African environmental legislation and supporting services as required"
+      animation_in : "left"
+      animation_out : "right"
+      bg_image : "images/banner/green-star-cbd-project-banner2.jpg"
+      # available animation : left, right, up, down
+      button:
+        enable : false
+        label : "Apply now"
+        link : "contact"
+
+    # slider item loop
+    - title : "Contaminated Land"
+      content : "Our services in this area range from subsurface assessment and evaluation of risk of the contaminant to liaising with the relevant authorities and management of clean ups.  We develop remediation solutions which are customised to the site and the client’s needs."
+      animation_in : "left"
+      animation_out : "right"
+      bg_image : "images/banner/water-barrels.jpg"
+      # available animation : left, right, up, down
+      button:
+        enable : false
+        label : "Apply now"
+        link : "contact"
+
+    # slider item loop
+    - title : "Underground Scanning"
+      content : "We work in a variety of environments and provide a variety of services from services detection in refineries, quality control in terms of concrete thickness for new builds to grave scanning and underground utility detection."
+      animation_in : "left"
+      animation_out : "right"
+      bg_image : "images/banner/onsite-min.jpg"
+      # available animation : left, right, up, down
+      button:
+        enable : false
+        label : "Apply now"
+        link : "contact"
+
+    # slider item loop
+    - title : "Environmental Solutions in a changing world"
+      content : "We provide a range of environmental services to meet our clients’ requirements"
+      animation_in : "left"
+      animation_out : "right"
+      bg_image : "images/banner/storage-tanks2.jpg"
+      # available animation : left, right, up, down
+      button:
+        enable : false
+        label : "Apply now"
+        link : "contact"
+        
+
+############################### Banner feature ###############################
+banner_feature:
+  enable : true
+  image : "images/banner/Recycle.png"
+  feature_item:
+    # feature item loop
+    - name : "Green Star Accreditation"
+      link : "/services/green-buildings"
+      service_image : "images/services/green-star-accreditation.png" # icon pack : https://themify.me/themify-icons
+      content : "Green Building project management from Concept to Award. Pre project initiation recommendations on credit criteria and maximising points attainable."
+
+    # feature item loop
+    - name : "Waste Management & Monitoring Services"
+      link : "/services/waste-management-monitoring-services"
+      service_image : "images/services/waste-and-recycling.png" # icon pack : https://themify.me/themify-icons
+      content : "Integrated Waste Management Plan Development. Cradle to Grave Waste Service Provider Auditing and Verification"
+
+    # feature item loop
+    - name : "Environmental Authorisations"
+      link : "/services/environmental-authorisations"
+      service_image : "images/services/environmental-impact-assessmnent.png" # icon pack : https://themify.me/themify-icons
+      content : "Environmental Applications, NEMA Scoping & EIA, Basic Assessment, Section 24G, Section 28, Section 30 submissions."
+
+    # feature item loop
+    - name : "Contamination Clean-Ups"
+      link : "/services/contamination-remediation-services"
+      service_image : "images/services/contamination-assessment-remediation.png" # icon pack : https://themify.me/themify-icons
+      content : "Soil and groundwater quality assessment, project management and quality control of remediation systems."
+
+    # feature item loop
+    - name : "Underground Utility Clearance"
+      link : "/services/underground-utilities-detection"
+      service_image : "images/services/underground-utlity-clearance.png" # icon pack : https://themify.me/themify-icons
+      content : "Sillito Environmental Consulting (SEC) have been utilising cutting edge Ground Penetrating Radar technology for the detection and location of underground utilities and subsurface features since 2012. "
+
+
+
+############################## about ##################################
+about:
+  enable : true
+  title : "Professional. Indepedent. Efficient."
+  image : "images/banner/green-star-cbd-project-2.jpg"
+  content1 : "Through the success of past projects and initiatives new environmental services are continually being developed by the team at Sillito Environmental Consulting in the field of Environmental, Health & Safety and Risk Management. "
+  content2 : "Each of the environmental management systems developed are custom designed. Environmental services, project management and monitoring are tailored to suit the specific site assessment requirements and company. Environmental assessments carried out by Sillito Environmental Consulting also ensure that all regulatory requirements are met."
+  button:
+    enable : true
+    label : "Learn more"
+    link : "about"
+
+
+############################# Course ################################
+course:
+  enable : true
+  title : "Our Course"
+  # course item comes from "content/**/course" folder.
+
+########################## Call to action ############################
+cta:
+  enable : true
+  subtitle1 : "-- 'Our core drive is to provide our client base with competent, efficient and professional environmental services, with careful regard to green building practices, ethical responsibilities, integrity and principles associated with the environmental management field.'"
+  title1 : "Adrian Sillito"
+  cv1 : "Professional Natural Scientist (Pr. Nat Sci)."
+  cv2 : "Certified Environmental Assessment Practitioner"
+  cv3 : "(CEAPSA) and Carbon Footprint Analyst"
+  cv4 : "(GHG Protocol)"
+
+  subtitle2 : "The company has membership through its professional staff of the following professional institutes and associations:"
+  title2 : Professional Registrations & Accreditations
+  button:
+    enable : true
+    label : "Connect with"
+    link : "contact"
+
+
+######################## Success story #############################
+success_story:
+  enable : false
+  bg_image : "images/backgrounds/green-star-cbd-project-2.jpg"
+  lefttitle : "Success Stories"
+  leftcontent : "Sillito Environmental Consulting offers a full range of environmental services and expertise. The company has worked on a variety of projects, including green buildings, remediation of contaminated land, environmental authorisations waste licenses and air emissions licenses for the Petrochemical, oil and solvent recycling, metallurgical & mining industries to name a few."
+  righttitle : "Success Stories"
+  rightcontent : "Sillito Environmental Consulting offers a full range of environmental services and expertise. The company has worked on a variety of projects, including green buildings, remediation of contaminated land, environmental authorisations waste licenses and air emissions licenses for the Petrochemical, oil and solvent recycling, metallurgical & mining industries to name a few."
+  # video link
+  link : "/projects"
+  label : "View Projects"
+
+
+############################# event ################################
+event:
+  enable : true
+  title : "Upcoming Events"
+  # event item comes from "content/**/event" folder.
+
+  
+########################### funfacts ############################
+funfacts:
+  enable : true
+  funfact_item:
+    # funfact item loop
+    - name : "TEACHERS"
+      count : "60"
+
+    # funfact item loop
+    - name : "COURSES"
+      count : "50"
+
+    # funfact item loop
+    - name : "STUDENTS"
+      count : "1000"
+
+    # funfact item loop
+    - name : "SATISFIED CLIENT"
+      count : "1400"
+
+# funfact is for about page
+
+
+
+############################# blog ################################
+blog:
+  enable : true
+  title : "News"
+  # blog item comes from "content/**/blog" folder.

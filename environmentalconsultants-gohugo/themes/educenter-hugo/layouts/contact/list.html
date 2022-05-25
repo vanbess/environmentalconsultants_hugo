@@ -1,0 +1,56 @@
+{{ define "main" }}
+
+<!-- contact -->
+<section class="section bg-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="section-title">{{ i18n "contact_us" }}</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-7 mb-4 mb-lg-0">
+        <form id="contact-us" action="{{ site.Params.contact_form_action | safeURL }}" method="POST">
+          <input type="text" class="form-control mb-3" id="name" name="name" placeholder="Your Name">
+          <input type="email" class="form-control mb-3" id="mail" name="mail" placeholder="Your Email">
+          <input type="text" class="form-control mb-3" id="number" name="number" placeholder="Your Phone Number">
+          <input type="text" class="form-control mb-3" id="subject" name="subject" placeholder="Subject">
+          <textarea name="message" id="message" class="form-control mb-3" placeholder="Your Message/Requirements"></textarea>
+          <input hidden type="surname" id="surname" name="surname">
+          <button type="submit" 
+                    id="submitButton"
+                    class="btn btn-primary g-recaptcha"
+                    data-sitekey="{{ site.Params.reCAPTCHA_site_key }}"
+                    data-callback='onSubmit' 
+                    data-action='submit'
+                    value="send">
+                    {{ i18n "send" }}</button>
+        </form>
+          <div style="position:absolute; right: 0px;">
+            <i id="spinner" class="tf-ion-load-a" hidden></i>  
+          </div>
+          <span id="form-message" hidden></span>
+      </div>
+      <div class="col-lg-5 content">
+        {{ .Content }}
+        <a href="tel:{{ site.Params.mobile }}" class="text-color h5 d-block">{{ site.Params.mobile }}</a>
+        <a href="mailto:{{ site.Params.email }}" class="mb-5 text-color h5 d-block">{{ site.Params.email }}</a>
+        <p>{{ site.Params.address | markdownify }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /contact -->
+
+<!-- gmap -->
+<section class="section pt-0">
+  <!-- Google Map -->
+  <div id="map_canvas" 
+  data-latitude="{{ site.Params.map.map_latitude }}"
+  data-longitude="{{ site.Params.map.map_longitude }}" 
+  data-marker="{{ site.Params.map.map_marker | absURL }}"
+  data-marker-name="{{ site.Title }}"></div>
+</section>
+<!-- /gmap -->
+
+{{ end }}
