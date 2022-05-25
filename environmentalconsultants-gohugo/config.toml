@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "/"
+baseURL = "https://vanbess.github.io/environmentalconsultants_hugo"
 title = "Sillito Environmental Consulting"
 theme = "educenter-hugo"
 # post pagination
